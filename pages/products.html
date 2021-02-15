@@ -1,16 +1,17 @@
 <!doctype html>
 <html>
+
 <head>
-  <!-- ... -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href = "products.css" rel = "stylesheet">
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<style> 
-#menu-toggle:checked + #menu {
-  display: block;
-}
-</style>
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="products.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 
 </head>
 
@@ -18,271 +19,321 @@
 
 
 
-  <!-- Navbar -->
-<body class="bg-gray-100 antialiased font-sans">
-  <header class="lg:px-16 px-8 bg-white flex flex-wrap items-center py-4 shadow-md">
-    <div class="flex-1 flex justify-between items-center">
-<a class="text-gray-800 dark:text-white text-xl font-bold md:text-2xl hover:text-gray-700 dark:hover:text-gray-300" href="./../index.html">Biomech</a>    </div>
+<!-- Navbar -->
 
-    <label for="menu-toggle" class="pointer-cursor md:hidden block">
+<body class="bg-gray-100 antialiased font-sans">
+    <header class="lg:px-16 px-8 bg-white flex flex-wrap items-center py-4 shadow-md">
+        <div class="flex-1 flex justify-between items-center">
+            <a class="text-gray-800 dark:text-white text-xl font-bold md:text-2xl hover:text-gray-700 dark:hover:text-gray-300" href="./../index.html">Biomech</a> </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
       <svg class="fill-current text-gray-900"
         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
         <title>menu</title>
         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
       </svg>
     </label>
-    <input class="hidden" type="checkbox" id="menu-toggle" />
+        <input class="hidden" type="checkbox" id="menu-toggle" />
 
-    <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-      <nav>
-        <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-          <li><a href="./../index.html"class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2">Home</a></li>
-          <li><a href="./../about/landing.html" class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2">Company</a></li>
-          <li><a class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="./products.html">Products</a></li>
-          <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="./career.html">Career</a></li>
-          <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="./contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    <li><a href="./../index.html" class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2">Home</a></li>
+                    <li><a href="./../about/landing.html" class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2">Company</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="./products.html">Products</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="./career.html">Career</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 <!-- Carousel -->
 
 <div class="carousel relative shadow-2xl bg-white">
-	<div class="carousel-inner relative overflow-hidden w-full">
-	  <!--Slide 1-->
-		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-		<div class="carousel-item absolute opacity-0" style="height:100vh;">
-			<div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center"> <img class = "slid" src = "https://images.unsplash.com/photo-1604537466573-5e94508fd243?ixid=MXwxMjA3fDF8MHxzZWFyY2h8Nnx8bGFuZHNjYXBlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-</div>
-		</div>
-		<label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-		
-		<!--Slide 2-->
-		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:100vh;">
-			<div class="block h-full w-full bg-orange-500 text-white text-5xl text-center"><img class = "slid" src = "https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
-		</div>
-		<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
-		
-		<!--Slide 3-->
-		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:100vh;">
-			<div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
-		</div>
-		<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+    <div class="carousel-inner relative overflow-hidden w-full">
+        <!--Slide 1-->
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item absolute opacity-0" style="height:100vh;">
+            <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center"> <img class="slid" src="https://images.unsplash.com/photo-1604537466573-5e94508fd243?ixid=MXwxMjA3fDF8MHxzZWFyY2h8Nnx8bGFuZHNjYXBlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            </div>
+        </div>
+        <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-		<!-- Add additional indicators for each slide-->
-		<ol class="carousel-indicators">
-			<li class="inline-block mr-3">
-				<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-			</li>
-		</ol>
-	</div>
+        <!--Slide 2-->
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0" style="height:100vh;">
+            <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center"><img class="slid" src="https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+        </div>
+        <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+        <!--Slide 3-->
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0" style="height:100vh;">
+            <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
+        </div>
+        <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+        <!-- Add additional indicators for each slide-->
+        <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+                <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+                <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+                <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+        </ol>
+    </div>
 </div>
 
 <hr>
 
 
-  <!-- Categories -->
+<!-- Categories -->
 
 <div class="p-8">
-  <div class="shadow-xl rounded-lg">
-    <div style="background-image: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')" class="h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-center justify-center"> 
-      <p class="text-white font-bold text-4xl">Our Flagship Product</p>
+    <div class="shadow-xl rounded-lg">
+        <div style="background-image: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')" class="h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-center justify-center">
+            <p class="text-white font-bold text-4xl">Our Flagship Product</p>
+        </div>
+        <div class="bg-white rounded-b-lg px-8">
+            <div class="pt-8 pb-8">
+
+
+                <section class="text-gray-600 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                        <div class="flex flex-col text-center w-full mb-20">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">OUR TOP SELLING PRODUCTS</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                                <!--Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.-->
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap -m-4">
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Floxip_500_mg_Tab_pl3dff.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                                            <!--writesomething-->
+                                        </h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Abixim 200</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373108/biomech/Biomech/Flagship%20Products/Amoxyclav_625_Tablets_10s_pts1ki.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Amoxyclav 625 Tablets 10s</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/C_one_Inj_1000_mg_vq7zq4.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">C one Inj 1000 mg</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/C_One_SB_Inj_qtkojo.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Floxip_250_mg_Tab_mfoifr.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Floxip 250 mg Tab</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Floxip_500_mg_Tab_pl3dff.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Floxip 500 mg Tab</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Nkacin_500_q1br43.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Nkacin 500</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Phensydl_DX_Syrup_100ml_ppqwak.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Phensydl DX Syrup 100ml</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373113/biomech/Biomech/Flagship%20Products/Rzole_dsr_hrgjq4.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Rzole dsr</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Safexim_200_Tablets_x9ythk.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Safexim 200 Tablets</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Zithrolect_500mg_Tab_ao64fd.jpg">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Zithrolect 500mg Tab</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                                <div class="flex relative">
+                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613383439/biomech/Biomech/logos%20and%20covers/Effimax_S_375mg_xfzu2j.png">
+                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Effimax S 375mg</h1>
+                                        <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-gray-600 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                        <div class="flex flex-wrap -m-4">
+                            <a href = "../EBrochure.pdf"><button>Download our full cateloge</button></a>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
     </div>
-    <div class="bg-white rounded-b-lg px-8">
-      <div class="pt-8 pb-8">
-        
-        
-    <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
-    </div>
-    <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Floxip_500_mg_Tab_pl3dff.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><!--writesomething--></h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Abixim 200</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373108/biomech/Biomech/Flagship%20Products/Amoxyclav_625_Tablets_10s_pts1ki.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Amoxyclav 625 Tablets 10s</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/C_one_Inj_1000_mg_vq7zq4.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">C one Inj 1000 mg</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/C_One_SB_Inj_qtkojo.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Floxip_250_mg_Tab_mfoifr.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Floxip 250 mg Tab</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Floxip_500_mg_Tab_pl3dff.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Floxip 500 mg Tab</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Nkacin_500_q1br43.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Nkacin 500</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Phensydl_DX_Syrup_100ml_ppqwak.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Phensydl DX Syrup 100ml</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373113/biomech/Biomech/Flagship%20Products/Rzole_dsr_hrgjq4.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Rzole dsr</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Safexim_200_Tablets_x9ythk.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Safexim 200 Tablets</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Zithrolect_500mg_Tab_ao64fd.jpg">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Zithrolect 500mg Tab</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
-        <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366">
-          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      
-    </div>
-  </div>
-</section>
-        
-        
-      </div>
-    </div>
-  </div>
 </div>
-  <!-- Footer -->
+<!-- Footer -->
 
-    
 
-<footer class="px-4 py-20 text-white bg-black">
-  <div class="container mx-auto">
-    <div class="grid grid-cols-2 gap-4 mb-3 md:grid-cols-5">
-      <img src = "https://res.cloudinary.com/biomechcloud/image/upload/v1611990182/biomech/Biomech/img/brand_mweftl.png"> 
-        <span class="sr-only">Kutty Home Page</span>
-      </a>
-      
-      <nav class="mb-8">
-        <p class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase">About</p>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Company</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Privacy</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Blog</a>
-      </nav>
-      <nav class="mb-8">
-        <p class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase">Contact</p>
-        <a href="https://www.facebook.com/BiomechHealth" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Facebook</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Instagram</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Email</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">skype</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Chat</a>
-      </nav>
-      <nav class="mb-8">
-        <p class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase">Legal</p>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Terms of Service</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Privacy Policy</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Cookie Policy</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Affiliate Program</a>
-        <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Manage Cookies</a>
-      </nav>
+
+<style>
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+</style>
+
+<footer class="px-4 py-20 text-white bg-black" style="padding-bottom:10px;">
+    <div class="container mx-auto" style="margin-left:7%">
+        <div class="grid grid-cols-2 gap-3 mb-3 md:grid-cols-4">
+            <img src="https://res.cloudinary.com/biomechcloud/image/upload/v1611990182/biomech/Biomech/img/brand_mweftl.png">
+            <span class="sr-only">Kutty Home Page</span>
+            </a>
+
+
+
+
+
+
+
+            <nav class="mb-8">
+                <p class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase">Legal</p>
+                <a class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">
+
+
+
+                    <div class="">
+
+                        <div class="dropdown inline-block relative">
+                            <button class="inline-flex items-center">
+      <span class="">Disclaimer</span>
+      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+    </button>
+                            <ul class="dropdown-menu relative hidden text-gray-700">
+                                <li class="">
+                                    <span class="max-w-screen-lg bg-white shadow-2xl rounded-lg  text-center">
+                                        <h2 class="text-3xl leading-9 font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-10">
+                                            Every efforts has been made to ensure that drug doses and other information are presented accurately in this brochure, the ultimate responsibility rests with the prescribing physician.<br/> The publisher has
+                                            taken reasonable care in the preparation of this catalogue, but makes no expressed or implied warrenty of any kind and assumes no responsibility for any errors or omissions. Neither the publisher not the firm
+                                            is responsible for errors or financial loss of any kind arising from the use of information contained herein.</a>
+                </li>
+                </h2>
+                </span>
+                </li>
+                </ul>
+                </div>
+
+                </div>
+
+
+
+
+
+
+                </a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Privacy Policy</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Cookie Policy</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Affiliate Program</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Manage Cookies</a>
+            </nav>
+            <nav class="mb-8">
+                <p class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase">About</p>
+                <a href="../about/landing.html" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Company</a>
+                <a href="../pages/career.html" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Carrer</a>
+                <a href="../pages/contact.html" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Contact</a>
+            </nav>
+            <nav class="mb-8">
+                <p class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase">Contact</p>
+                <a href="https://www.facebook.com/BiomechHealth" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Facebook</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Instagram</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">Linkedin</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">mail</a>
+                <a href="#" class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary">call</a>
+            </nav>
+
+        </div>
+        <p class="text-sm font-medium text-left text-gray-600 " style="margin-left:25%">© Copyright 2021 Biomech Healthcare Inc. All Rights Reserved.</p>
     </div>
-    <p class="text-sm font-medium text-left text-gray-600 md:text-center">© Copyright 2021 Biomech Healthcare Inc. All Rights Reserved.</p>
-  </div>
 </footer>
 
 </html>
