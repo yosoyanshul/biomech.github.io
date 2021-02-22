@@ -37,7 +37,7 @@
   ~ .carousel-indicators
   li:nth-child(3)
   .carousel-bullet {
-  color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
+  color: white; /*Set to match the Tailwind colour you want the active one to be */
 }
 .slid{
   width: 100%;
