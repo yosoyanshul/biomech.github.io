@@ -1939,7 +1939,7 @@ header p {
 }
 
 header h2+p {
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin-top: -1em;
     line-height: 1.75em;
 }
@@ -3228,9 +3228,9 @@ body.landing #page-wrapper {
 }
 
 body.landing #header {
-    background: transparent;
+   /* background: transparent;*/
     box-shadow: none;
-    position: absolute;
+    position: sticky;
 }
 
 /* Banner */
@@ -3238,7 +3238,7 @@ body.landing #header {
 #banner {
     background-attachment: fixed;
     background-color: #272833;
-    background-image: url("https://images.unsplash.com/photo-1516575901726-efcb7a9895a0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhlYWx0aHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-image: url("https://res.cloudinary.com/biomechcloud/image/upload/v1614254904/biomech/Biomech/Flagship%20Products/mladen-borisov-RzbUUaP2JXY-unsplash_hvlhxo.jpg");
     background-position: center center;
     background-size: cover;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3299,6 +3299,7 @@ body.landing #header {
 #banner .content header p {
     margin: 0.5em 0 0 0;
     top: 0;
+    font-weight: 500;
 }
 
 #banner .content .image {
