@@ -39,3 +39,7 @@
   .carousel-bullet {
   color: white; /*Set to match the Tailwind colour you want the active one to be */
 }
+.slid{
+  width: 100%;
+  height: 100%;
+}
