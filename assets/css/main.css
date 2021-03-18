@@ -266,7 +266,7 @@ input, select, textarea {
 			display: block;
 			line-height: 1.75em;
 			padding: 1em 1.5em;
-			overflow-x: auto;
+			overflow-x: hidden;
 		}
 
 	.align-left {
