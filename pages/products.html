@@ -1,142 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- ... -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="products.css" rel="stylesheet">
-    
+    <link href="products.css" rel="stylesheet" />
 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <style>
-        #menu-toggle:checked+#menu {
-            display: block;
-        }
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
     </style>
+  </head>
 
-</head>
+  <!-- Navbar -->
 
+  <body class="bg-gray-100 antialiased font-sans">
+    <header
+      class="lg:px-16 px-8 bg-white flex flex-wrap items-center py-4 shadow-md"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a
+          class="text-gray-800 dark:text-white text-xl font-bold md:text-2xl hover:text-gray-700 dark:hover:text-gray-300"
+          href="./../index.html"
+          >Biomech</a
+        >
+      </div>
 
+      <label for="menu-toggle" class="pointer-cursor md:hidden block">
+        <svg
+          class="fill-current text-gray-900"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
 
-
-
-<!-- Navbar -->
-
-
-
-<body class="bg-gray-100 antialiased font-sans">
-    <header class="lg:px-16 px-8 bg-white flex flex-wrap items-center py-4 shadow-md">
-        <div class="flex-1 flex justify-between items-center">
-            <a class="text-gray-800 dark:text-white text-xl font-bold md:text-2xl hover:text-gray-700 dark:hover:text-gray-300" href="./../index.html">Biomech</a> </div>
-
-        <label for="menu-toggle" class="pointer-cursor md:hidden block">
-      <svg class="fill-current text-gray-900"
-        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-        <title>menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-      </svg>
-    </label>
-        <input class="hidden" type="checkbox" id="menu-toggle" />
-
-        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-            <nav>
-                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                    <li><a href="../index.html" class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2">Home</a></li>
-                    <li><a href="company/index.html" class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2">About Us</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="products.html">Products</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="career.html">Career</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2" href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+        <nav>
+          <ul
+            class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="company/index.html"
+                class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-3 px-0 block py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2"
+                href="products.html"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2"
+                href="career.html"
+                >Career</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-3 px-0 block md:mb-0 mb-2 py-1 px-2 text-gray-700 dark:text-gray-200 rounded text-sm font-medium hover:bg-gray-900 hover:text-gray-100 md:mx-2"
+                href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-</body>
-<!-- Carousel -->
+  </body>
+  <!-- Carousel -->
 
-
-
-<style>
+  <style>
     .carousel-open:checked + .carousel-item {
-        position: static;
-        opacity: 100;
+      position: static;
+      opacity: 100;
     }
     .carousel-item {
-        -webkit-transition: opacity 0.6s ease-out;
-        transition: opacity 0.6s ease-out;
+      -webkit-transition: opacity 0.6s ease-out;
+      transition: opacity 0.6s ease-out;
     }
     #carousel-1:checked ~ .control-1,
     #carousel-2:checked ~ .control-2,
     #carousel-3:checked ~ .control-3 {
-        display: block;
+      display: block;
     }
     .carousel-indicators {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        bottom: 2%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 10;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
     }
-    #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-    #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-        color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+    #carousel-1:checked
+      ~ .control-1
+      ~ .carousel-indicators
+      li:nth-child(1)
+      .carousel-bullet,
+    #carousel-2:checked
+      ~ .control-2
+      ~ .carousel-indicators
+      li:nth-child(2)
+      .carousel-bullet,
+    #carousel-3:checked
+      ~ .control-3
+      ~ .carousel-indicators
+      li:nth-child(3)
+      .carousel-bullet {
+      color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
     }
-</style>
+  </style>
 
+  <div class="carousel relative shadow-2xl bg-white">
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <!--Slide 1-->
+      <input
+        class="carousel-open"
+        type="radio"
+        id="carousel-1"
+        name="carousel"
+        aria-hidden="true"
+        hidden=""
+        checked="checked"
+      />
+      <div class="carousel-item absolute opacity-0" style="height: 50vh">
+        <div class="block h-full w-full text-white text-5xl text-center">
+          <img
+            class="slid"
+            src="https://res.cloudinary.com/biomechcloud/image/upload/v1615138568/biomech/Biomech/1380X350_1_csnpuo.png"
+          />
+        </div>
+      </div>
+      <label
+        for="carousel-3"
+        class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+        >‹</label
+      >
+      <label
+        for="carousel-2"
+        class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+        >›</label
+      >
 
+      <!--Slide 2-->
+      <input
+        class="carousel-open"
+        type="radio"
+        id="carousel-2"
+        name="carousel"
+        aria-hidden="true"
+        hidden=""
+      />
+      <div class="carousel-item absolute opacity-0" style="height: 50vh">
+        <div class="block h-full w-full text-white text-5xl text-center">
+          <img
+            class="slid"
+            src="https://res.cloudinary.com/biomechcloud/image/upload/v1615138566/biomech/Biomech/1380X350_3_drmgml.png"
+          />
+        </div>
+      </div>
+      <label
+        for="carousel-1"
+        class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+        >‹</label
+      >
+      <label
+        for="carousel-3"
+        class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+        >›</label
+      >
 
+      <!--Slide 3-->
+      <input
+        class="carousel-open"
+        type="radio"
+        id="carousel-3"
+        name="carousel"
+        aria-hidden="true"
+        hidden=""
+      />
+      <div class="carousel-item absolute opacity-0" style="height: 50vh">
+        <div class="block h-full w-full text-white text-5xl text-center">
+          <img
+            class="slid"
+            src="https://res.cloudinary.com/biomechcloud/image/upload/v1615138564/biomech/Biomech/1380X350_2_lae43m.png"
+          />
+        </div>
+      </div>
+      <label
+        for="carousel-2"
+        class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+        >‹</label
+      >
+      <label
+        for="carousel-1"
+        class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+        >›</label
+      >
 
-<div class="carousel relative shadow-2xl bg-white">
-	<div class="carousel-inner relative overflow-hidden w-full">
-	  <!--Slide 1-->
-		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full text-white text-5xl text-center">            <img class="slid" src="https://res.cloudinary.com/biomechcloud/image/upload/v1615138568/biomech/Biomech/1380X350_1_csnpuo.png">
-            </div>
-		</div>
-		<label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-		
-		<!--Slide 2-->
-		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full text-white text-5xl text-center"><img class="slid" src="https://res.cloudinary.com/biomechcloud/image/upload/v1615138566/biomech/Biomech/1380X350_3_drmgml.png"></div>
-		</div>
-		<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
-		
-		<!--Slide 3-->
-		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full text-white text-5xl text-center"><img class="slid" src="https://res.cloudinary.com/biomechcloud/image/upload/v1615138564/biomech/Biomech/1380X350_2_lae43m.png"></div>
-		</div>
-		<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+      <!-- Add additional indicators for each slide-->
+      <ol class="carousel-indicators">
+        <li class="inline-block mr-3">
+          <label
+            for="carousel-1"
+            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+            >•</label
+          >
+        </li>
+        <li class="inline-block mr-3">
+          <label
+            for="carousel-2"
+            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+            >•</label
+          >
+        </li>
+        <li class="inline-block mr-3">
+          <label
+            for="carousel-3"
+            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+            >•</label
+          >
+        </li>
+      </ol>
+    </div>
+  </div>
 
-		<!-- Add additional indicators for each slide-->
-		<ol class="carousel-indicators">
-			<li class="inline-block mr-3">
-				<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-			</li>
-		</ol>
-		
-	</div>
-</div>
-
-
-
-        <!--<div class="carousel relative shadow-2xl bg-white">
+  <!--<div class="carousel relative shadow-2xl bg-white">
     <div class="carousel-inner relative overflow-hidden w-full">
         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
         <div class="carousel-item absolute opacity-0" style="height:100vh;">
@@ -179,286 +293,538 @@
 
  -->
 
-<div class="p-8">
+  <div class="p-8">
     <div class="shadow-xl rounded-lg">
-        <div style="background-image: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')" class="h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-center justify-center">
-            <p class="text-white font-bold text-4xl">Our Flagship Product</p>
-        </div>
+      <div
+        style="
+          background-image: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+        "
+        class="h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-center justify-center"
+      >
+        <p class="text-white font-bold text-4xl">Our Flagship Product</p>
+      </div>
 
-        
-        <div class="bg-white rounded-b-lg px-8">
-            <div class="pt-8 pb-8">
-
-
-                <section class="text-gray-600 body-font">
-                    <div style = "text-align:center;margin-top: 1em;">
-                        <button
-                      class="py-2 px-4 bg-transparent text-red-600 font-semibold border border-red-600 rounded hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
-                    ><a href = "../EBrochure.pdf" target="_blank">Download our full catalogue</a></button>
+      <div class="bg-white rounded-b-lg px-8">
+        <div class="pt-8 pb-8">
+          <section class="text-gray-600 body-font">
+            <div style="text-align: center; margin-top: 1em">
+              <button
+                class="py-2 px-4 bg-transparent text-red-600 font-semibold border border-red-600 rounded hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
+              >
+                <a href="../EBrochure.pdf" target="_blank"
+                  >Download our full catalogue</a
+                >
+              </button>
+            </div>
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h1
+                  class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+                >
+                  OUR TOP SELLING PRODUCTS
+                </h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                  <!--Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.-->
+                </p>
               </div>
-                    <div class="container px-5 py-24 mx-auto">
-                        
-                        <div class="flex flex-col text-center w-full mb-20">
-                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">OUR TOP SELLING PRODUCTS</h1>
-                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                                <!--Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.-->
-                            </p>
-                        </div>
-                        <div class="flex flex-wrap -m-4">
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative  ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373108/biomech/Biomech/Flagship%20Products/Abixim_200_Tab_unipsd.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                                            <!--writesomething-->
-                                        </h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Abixim 200</h1>
-                                        <p class="leading-relaxed">Each Uncoated dispersible Tablet Contains: 
-Cefexime Trihydrate IP equ. To Cefexime 200MG
-</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373108/biomech/Biomech/Flagship%20Products/Amoxyclav_625_Tablets_10s_pts1ki.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Amoxyclav 625 Tablets 10s</h1>
-                                        <p class="leading-relaxed">Each film coated contains: Amoxycilllin Trihydrate IPeq.
-to Amoxycillin 500mg,Potassium Clavulanate IP
-(as Potassium Clavulanate Diluted IP) eq. to Clavulanic
-Acid 125mg. Colour - Titanium Dioxide IP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/C_One_SB_Inj_qtkojo.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">C one Inj sb </h1>
-                                        <p class="leading-relaxed">Each vial contains:Ceftriaxone Sodium IP 1.5gms 
-sterileeq. to ceftriaxone 1000mg
-Sulbactam Sodium USP sterile eq. to Sulbactam 500mg</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/C_one_Inj_1000_mg_vq7zq4.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">C one Inj 1000mg</h1>
-                                        <p class="leading-relaxed">Each vial contains : Sterile Ceftriaxone Sodium U.S.P.
-equivalent to Anhydrous Ceftriaxone 1000 mg</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Floxip_250_mg_Tab_mfoifr.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Floxip 250 mg Tab</h1>
-                                        <p class="leading-relaxed">Each film coated tablet contains: Ciprofloxacin 
-Hydrochloride IP equivalent to Ciprofloxacin 250mg
-Colour Titanium Dioxide IP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Floxip_500_mg_Tab_pl3dff.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Floxip 500 mg Tab</h1>
-                                        <p class="leading-relaxed">Each film coated tablet contains 
-Ciprofloxacin Hydrochloride IP equivalent to
-Ciprofloxacin 500mg</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Nkacin_500_q1br43.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Nkacin 500</h1>
-                                        <p class="leading-relaxed">Each 2ml contains Amikacin Sulphate I.P. 
-Equivalent to Amikacin500mg, Methyl Paraben I.P.0.08%
-w/v Propyl Paraben(As preservative) I.P.0.02% w/v
-Water for injection I.P. q.s.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Phensydl_DX_Syrup_100ml_ppqwak.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Phensedyl Dx Syrup 100ml</h1>
-                                        <p class="leading-relaxed">Each 5 ml contains: Dextromethorphan Hydrobromide IP 10mg, 
-                                            Chlorpheniramine Maleate IP 2mg, In a flavoured base q.s. . <br/> Quantity: 100ml <br/>Mrp: 95.71</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373113/biomech/Biomech/Flagship%20Products/Rzole_dsr_hrgjq4.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Rzole dsr</h1>
-                                        <p class="leading-relaxed">Composition: Rabeprazole Sodium IP 20mg 
-(As Enteric Coated Pellets), Domperidone IP 30mg
-(As Sustained Release Pellets)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Safexim_200_Tablets_x9ythk.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Safexim 200 Tablets</h1>
-                                        <p class="leading-relaxed">Each Dispersible tablet contains: Cefixime (as Trihydrate) 10Tabs 500 105.17
-USP eqv.to Anhydrous Cefixime 200mg Excipients q.s.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Zithrolect_500mg_Tab_ao64fd.jpg">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Zithrolect 500mg Tab</h1>
-                                        <p class="leading-relaxed">Each film coated tablet contains 
-Azthromycin Dihydrate IP eqv. to Azithromycin -500mg.
-Colour -Yellow Oxide of Iron & Titanium Dioxide IP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
-                                <div class="flex relative ">
-                                    <img alt="gallery" class="absolute inset-0 w-full h-full object-scale-down object-center fit" src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613383439/biomech/Biomech/logos%20and%20covers/Effimax_S_375mg_xfzu2j.png">
-                                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                        <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Effimax S 375mg</h1>
-                                        <p class="leading-relaxed">Each vials contains: Sterile Ceftrioxone Sodium IP
-Equivalent to Ceftrioxone 250mg Sterile Sulbactum
-Sodium USP equivalent to Sulbactum 125mg.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap -m-4 ">
-                            
-                        </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373108/biomech/Biomech/Flagship%20Products/Abixim_200_Tab_unipsd.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      >
+                        <!--writesomething-->
+                      </h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Abixim 200
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each Uncoated dispersible Tablet Contains: Cefexime
+                        Trihydrate IP equ. To Cefexime 200MG
+                      </p>
                     </div>
-
-                </section>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373108/biomech/Biomech/Flagship%20Products/Amoxyclav_625_Tablets_10s_pts1ki.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Amoxyclav 625 Tablets 10s
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each film coated contains: Amoxycilllin Trihydrate IPeq.
+                        to Amoxycillin 500mg,Potassium Clavulanate IP (as
+                        Potassium Clavulanate Diluted IP) eq. to Clavulanic Acid
+                        125mg. Colour - Titanium Dioxide IP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/C_One_SB_Inj_qtkojo.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        C one Inj sb
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each vial contains:Ceftriaxone Sodium IP 1.5gms
+                        sterileeq. to ceftriaxone 1000mg Sulbactam Sodium USP
+                        sterile eq. to Sulbactam 500mg
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/C_one_Inj_1000_mg_vq7zq4.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        C one Inj 1000mg
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each vial contains : Sterile Ceftriaxone Sodium U.S.P.
+                        equivalent to Anhydrous Ceftriaxone 1000 mg
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Floxip_250_mg_Tab_mfoifr.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Floxip 250 mg Tab
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each film coated tablet contains: Ciprofloxacin
+                        Hydrochloride IP equivalent to Ciprofloxacin 250mg
+                        Colour Titanium Dioxide IP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Floxip_500_mg_Tab_pl3dff.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Floxip 500 mg Tab
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each film coated tablet contains Ciprofloxacin
+                        Hydrochloride IP equivalent to Ciprofloxacin 500mg
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Nkacin_500_q1br43.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Nkacin 500
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each 2ml contains Amikacin Sulphate I.P. Equivalent to
+                        Amikacin500mg, Methyl Paraben I.P.0.08% w/v Propyl
+                        Paraben(As preservative) I.P.0.02% w/v Water for
+                        injection I.P. q.s.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373109/biomech/Biomech/Flagship%20Products/Phensydl_DX_Syrup_100ml_ppqwak.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Phensedyl Dx Syrup 100ml
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each 5 ml contains: Dextromethorphan Hydrobromide IP
+                        10mg, Chlorpheniramine Maleate IP 2mg, In a flavoured
+                        base q.s. . <br />
+                        Quantity: 100ml <br />Mrp: 95.71
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373113/biomech/Biomech/Flagship%20Products/Rzole_dsr_hrgjq4.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Rzole dsr
+                      </h1>
+                      <p class="leading-relaxed">
+                        Composition: Rabeprazole Sodium IP 20mg (As Enteric
+                        Coated Pellets), Domperidone IP 30mg (As Sustained
+                        Release Pellets)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Safexim_200_Tablets_x9ythk.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Safexim 200 Tablets
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each Dispersible tablet contains: Cefixime (as
+                        Trihydrate) 10Tabs 500 105.17 USP eqv.to Anhydrous
+                        Cefixime 200mg Excipients q.s.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_pad,h_360,w_600/v1613373110/biomech/Biomech/Flagship%20Products/Zithrolect_500mg_Tab_ao64fd.jpg"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      ></h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Zithrolect 500mg Tab
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each film coated tablet contains Azthromycin Dihydrate
+                        IP eqv. to Azithromycin -500mg. Colour -Yellow Oxide of
+                        Iron & Titanium Dioxide IP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 lol">
+                  <div class="flex relative">
+                    <img
+                      alt="gallery"
+                      class="absolute inset-0 w-full h-full object-scale-down object-center fit"
+                      src="https://res.cloudinary.com/biomechcloud/image/upload/c_scale,h_360,w_600/v1613383439/biomech/Biomech/logos%20and%20covers/Effimax_S_375mg_xfzu2j.png"
+                    />
+                    <div
+                      class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                    >
+                      <h2
+                        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+                      >
+                        THE SUBTITLE
+                      </h2>
+                      <h1
+                        class="title-font text-lg font-medium text-gray-900 mb-3"
+                      >
+                        Effimax S 375mg
+                      </h1>
+                      <p class="leading-relaxed">
+                        Each vials contains: Sterile Ceftrioxone Sodium IP
+                        Equivalent to Ceftrioxone 250mg Sterile Sulbactum Sodium
+                        USP equivalent to Sulbactum 125mg.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap -m-4"></div>
             </div>
+          </section>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- component -->
-<div style = "text-align:center; padding-bottom:3%;">
-          <button
-        class="py-2 px-4 bg-transparent text-red-600 font-semibold border border-red-600 rounded hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
-      ><a href = "../EBrochure.pdf">Download our full catalogue</a></button>
-</div>
-<!-- Footer -->
+  <!-- component -->
+  <div style="text-align: center; padding-bottom: 3%">
+    <button
+      class="py-2 px-4 bg-transparent text-red-600 font-semibold border border-red-600 rounded hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
+    >
+      <a href="../EBrochure.pdf">Download our full catalogue</a>
+    </button>
+  </div>
+  <!-- Footer -->
 
- <footer class=" bg-black dark:bg-gray-800 " style = " color:white; ">
-        <div class=" container px-6 py-16 mx-auto ">
-            <div class=" lg:flex ">
-                <div class=" w-full -mx-6 lg:w-2/5 ">
-                    <div class=" px-6 ">
-                        <div>
-                            <a href=" ../index.html " class=" text-xl font-bold text-white-800 dark:text-white
-            hover:text-gray-700 dark:hover:text-gray-300 ">Biomech Healthcare</a>
-                        </div>
-                        
-                        <p class=" max-w-md mt-2 dark:text-gray-400 ">56/08/01 Lasudiya Mori <br/> Indore MP 452010.</p>
-                        
-                        <div class=" flex mt-4 -mx-2 ">
-                            <a href=" https://www.linkedin.com/company/biomechhealthcare " class=" mx-2 dark:text-gray-200 hover dark:hover:text-gray-400 " aria-label="
-            Linkden ">
-                                <svg class=" w-4 h-4 fill-current " viewBox=" 0 0 512 512 ">
-                                    <path d="
-            M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z "/>
-                                </svg>
-                            </a>
-
-                            <a href=" https://www.facebook.com/BiomechHealth " class=" mx-2 text-gray dark:text-gray-200 hover
-            dark:hover:text-gray-400 " aria-label=" Facebook ">
-                                <svg class=" w-4 h-4 fill-current " viewBox=" 0 0 512 512 ">
-                                    <path d="
-            M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z "/>
-                                </svg>
-                            </a>
-
-                            <a href="https://twitter.com/biomech_health" class=" mx-2 text-gray dark:text-gray-200 hover
-            dark:hover:text-gray-400 " aria-label=" Twitter ">
-                                <svg class=" w-4 h-4 fill-current " viewBox=" 0 0 512 512 ">
-                                    <path d="
-            M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z "/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=" mt-6 lg:mt-0 lg:flex-1 ">
-                    <div class=" grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 ">
-                        <div>
-                            <h3 href = " company/index.html " class=" text-gray uppercase dark:text-white ">About</h3>
-                            <a href=" company/index.html " class=" block mt-2 text-sm dark:text-gray-400
-            hover:underline ">Company</a>
-                            <a href=" products.html " class=" block mt-2 text-sm dark:text-gray-400 hover:underline ">Products</a>
-                            <a href=" career.html " class=" block mt-2 text-sm dark:text-gray-400 hover:underline ">Careers</a>
-                        </div>
-
-                        <div>
-                            <h3 class=" text-white uppercase dark:text-white ">Connect</h3>
-                            <a href=" https://www.facebook.com/BiomechHealth " class=" block mt-2 text-sm
-            dark:text-gray-400 hover:underline ">Facebook</a>
-                            <a href=" https://www.linkedin.com/company/biomechhealthcare/ " class=" block mt-2 text-sm
-            dark:text-gray-400 hover:underline ">Linkedin</a>
-                            <a href=" https://www.instagram.com/biomechHealthcare/ " class=" block mt-2 text-sm
-            dark:text-gray-400 hover:underline ">Instagram</a>
-                        </div>
-
-                        <div>
-                            <h3 class=" text-white uppercase dark:text-white ">Contact</h3>
-                            <a href=" wa.me/+918827096307 " class=" block mt-2 text-sm dark:text-gray-400
-            hover:underline ">Whatsapp</a>
-                            <a href=" tel:+9107313504350 " class=" block mt-2 text-sm dark:text-gray-400
-            hover:underline ">Call Us</a>
-                            <a href=" mailto:info@biomechhealthcare.com " class=" block mt-2 text-sm dark:text-gray-400
-            hover:underline ">Mail Us</a>
-                        </div>
-
-                        <div>
-                            <h3 class=" text-white uppercase dark:text-white "><a href = " contact.html ">Visit Us</a></h3>
-                            <span class=" block mt-2 text-sm dark:text-gray-400 hover:underline "><a href ="
-            contact.html ">Contact Us</a></span>
-                            <span class=" block mt-2 text-sm dark:text-gray-400 hover:underline "><a href = "
-            tel:+9107313504350 ">0731 3504350</a></span>
-                            <span class=" block mt-2 text-sm dark:text-gray-400 hover:underline ">Info@biomechhealthcare.com</span>
-                        </div>
-                    </div>
-                </div>
+  <footer class="bg-black dark:bg-gray-800" style="color: white">
+    <div class="container px-6 py-16 mx-auto">
+      <div class="lg:flex">
+        <div class="w-full -mx-6 lg:w-2/5">
+          <div class="px-6">
+            <div>
+              <a
+                href=" ../index.html "
+                class="text-xl font-bold text-white-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                >Biomech Healthcare</a
+              >
             </div>
 
-            <hr class=" h-px my-6 bg-gray-300 border-none dark:bg-gray-700 ">
+            <p class="max-w-md mt-2 dark:text-gray-400">
+              56/08/01 Lasudiya Mori <br />
+              Indore MP 452010.
+            </p>
+
+            <div class="flex mt-4 -mx-2">
+              <a
+                href=" https://www.linkedin.com/company/biomechhealthcare "
+                class="mx-2 dark:text-gray-200 hover dark:hover:text-gray-400"
+                aria-label="
+            Linkden "
+              >
+                <svg class="w-4 h-4 fill-current" viewBox=" 0 0 512 512 ">
+                  <path
+                    d="
+            M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z "
+                  />
+                </svg>
+              </a>
+
+              <a
+                href=" https://www.facebook.com/BiomechHealth "
+                class="mx-2 text-gray dark:text-gray-200 hover dark:hover:text-gray-400"
+                aria-label=" Facebook "
+              >
+                <svg class="w-4 h-4 fill-current" viewBox=" 0 0 512 512 ">
+                  <path
+                    d="
+            M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z "
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://twitter.com/biomech_health"
+                class="mx-2 text-gray dark:text-gray-200 hover dark:hover:text-gray-400"
+                aria-label=" Twitter "
+              >
+                <svg class="w-4 h-4 fill-current" viewBox=" 0 0 512 512 ">
+                  <path
+                    d="
+            M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z "
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 lg:mt-0 lg:flex-1">
+          <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+            <div>
+              <h3
+                href=" company/index.html "
+                class="text-gray uppercase dark:text-white"
+              >
+                About
+              </h3>
+              <a
+                href=" company/index.html "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Company</a
+              >
+              <a
+                href=" products.html "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Products</a
+              >
+              <a
+                href=" career.html "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Careers</a
+              >
+            </div>
 
             <div>
-                <p class=" text-center dark:text-white ">© Biomech Healthcare 2021 - All rights reserved</p>
+              <h3 class="text-white uppercase dark:text-white">Connect</h3>
+              <a
+                href=" https://www.facebook.com/BiomechHealth "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Facebook</a
+              >
+              <a
+                href=" https://www.linkedin.com/company/biomechhealthcare/ "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Linkedin</a
+              >
+              <a
+                href=" https://www.instagram.com/biomechHealthcare/ "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Instagram</a
+              >
             </div>
+
+            <div>
+              <h3 class="text-white uppercase dark:text-white">Contact</h3>
+              <a
+                href=" wa.me/+918319258037 "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Whatsapp</a
+              >
+              <a
+                href=" tel:+9107313504350 "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Call Us</a
+              >
+              <a
+                href=" mailto:info@biomechhealthcare.com "
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Mail Us</a
+              >
+            </div>
+
+            <div>
+              <h3 class="text-white uppercase dark:text-white">
+                <a href=" contact.html ">Visit Us</a>
+              </h3>
+              <span
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                ><a
+                  href="
+            contact.html "
+                  >Contact Us</a
+                ></span
+              >
+              <span
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                ><a
+                  href="
+            tel:+9107313504350 "
+                  >0731 3504350</a
+                ></span
+              >
+              <span
+                class="block mt-2 text-sm dark:text-gray-400 hover:underline"
+                >Info@biomechhealthcare.com</span
+              >
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
 
+      <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700" />
 
+      <div>
+        <p class="text-center dark:text-white">
+          © Biomech Healthcare 2021 - All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>
